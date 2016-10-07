@@ -25,9 +25,11 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <%- @getBlock("meta").toHTML() %>
+  <%- @getBlock("styles").toHTML() %>
 </head>
 <body>
   <%- @content %>
+  <%- @getBlock("scripts").toHTML() %>
 </body>
 </html>
